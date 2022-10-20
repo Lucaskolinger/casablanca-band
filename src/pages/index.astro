@@ -1,0 +1,34 @@
+---
+import Hero from "../components/Hero.vue";
+import Cta from "../components/Cta.vue";
+import Musiker from "../components/Musiker.vue";
+import Repertiore from "../components/Repertoire.vue";
+import Gallery from "../components/Gallery.vue";
+import Footer from "../components/Footer.vue";
+
+import "../assets/stylesheets/global.scss";
+---
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Casablanca Liveband</title>
+    <script
+      type="application/javascript"
+      src="https://www.youtube.com/iframe_api"
+      defer
+    ></script>
+  </head>
+  <body>
+    <Hero />
+    <Cta client:idle />
+    <Musiker client:idle />
+    <Repertiore />
+    <Gallery />
+    <Footer />
+  </body>
+</html>
