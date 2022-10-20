@@ -10,12 +10,12 @@
             musician="Edmund"
           />
           <Hörprobe
-            :playbutton="true"
+            :playbutton="false"
             title="Shallow"
             musician="Br Cooper & Lady Gaga"
           />
           <Hörprobe
-            :playbutton="true"
+            :playbutton="false"
             title="So liab hob i di"
             musician="Andreas Gabalier"
           />
@@ -30,12 +30,12 @@
             musician="Caro Emerald"
           />
           <Hörprobe
-            :playbutton="true"
+            :playbutton="false"
             title="Stumblin' in"
             musician="Suzy Quatro & Chris Norman"
           />
           <Hörprobe
-            :playbutton="true"
+            :playbutton="false"
             title="It's so easy"
             musician="Linda Ronstadt"
           />
@@ -50,12 +50,12 @@
             musician="Die Ärzte"
           />
           <Hörprobe
-            :playbutton="true"
+            :playbutton="false"
             title="Atemlos"
             musician="Helene Fischer"
           />
           <Hörprobe
-            :playbutton="true"
+            :playbutton="false"
             title="Simply the best"
             musician="Tina Turner"
           />
@@ -75,7 +75,7 @@
             musician="Europe"
           />
           <Hörprobe
-            :playbutton="true"
+            :playbutton="false"
             title="We will rock you"
             musician="Queen"
           />

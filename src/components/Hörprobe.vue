@@ -73,6 +73,7 @@ export default {
     line-height: 1.4;
     margin-left: auto;
     text-align: right;
+    max-width: 6rem;
   }
 }
 </style>
