@@ -19,7 +19,7 @@
       <div class="title-row">
         <h2 class="name">Chris</h2>
         <div class="icons">
-          <svg
+          <!-- <svg
             xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="xMidYMid meet"
             viewBox="0 0 512 512"
@@ -55,7 +55,7 @@
               fill="currentColor"
               d="M16 22a5 5 0 0 0 5-5V7a5 5 0 0 0-10 0v10a5 5 0 0 0 5 5Z"
             />
-          </svg>
+          </svg> -->
         </div>
       </div>
       <p class="text">

@@ -37,7 +37,7 @@
             />
           </svg>
         </button>
-        <p-tel ref="number">38u01908390380</p-tel>
+        <p-tel ref="number">+49 152 03419607</p-tel>
       </div>
       <div class="mail-row">
         <button ref="btn" @click="copyMailToClipboard">
@@ -74,7 +74,7 @@
             />
           </svg>
         </button>
-        <p ref="email">mailadresse@mail.com</p>
+        <p ref="email">Markus.Kurbanoglu@gmx.de</p>
       </div>
     </div>
   </section>

@@ -19,6 +19,26 @@
             title="So liab hob i di"
             musician="Andreas Gabalier"
           />
+          <Hörprobe
+            :playbutton="false"
+            title="Just give me a reason"
+            musician="Pink feat. Nate Ruess"
+          />
+          <Hörprobe
+            :playbutton="false"
+            title="Love on the brain"
+            musician="Rihanna"
+          />
+          <Hörprobe
+            :playbutton="false"
+            title="You are the sunshine of my life"
+            musician="Stevie Wonder"
+          />
+          <Hörprobe
+            :playbutton="false"
+            title="Ohne Dich"
+            musician="Münchner Freiheit"
+          />
         </div>
       </div>
       <div class="rubrik party">
@@ -38,6 +58,26 @@
             :playbutton="false"
             title="It's so easy"
             musician="Linda Ronstadt"
+          />
+          <Hörprobe
+            :playbutton="false"
+            title="Can’t take my eyes off of you"
+            musician="Gloria Gaynor feat. Hermes House Band"
+          />
+          <Hörprobe
+            :playbutton="false"
+            title="Paradise"
+            musician="George Ezra"
+          />
+          <Hörprobe
+            :playbutton="false"
+            title="Vincent"
+            musician="Sarah Connor"
+          />
+          <Hörprobe
+            :playbutton="false"
+            title="Up"
+            musician="Olly Murs feat. Demi Lovato"
           />
         </div>
       </div>
@@ -59,6 +99,31 @@
             title="Simply the best"
             musician="Tina Turner"
           />
+          <Hörprobe
+            :playbutton="false"
+            title="Expresso & Tschianti"
+            musician="Josh"
+          />
+          <Hörprobe
+            :playbutton="false"
+            title="Long Train Running"
+            musician="Doobie Brothers"
+          />
+          <Hörprobe
+            :playbutton="false"
+            title="Mit 66 Jahren"
+            musician="Udo Jürgens"
+          />
+          <Hörprobe
+            :playbutton="false"
+            title="Fuck you"
+            musician="Cee Lo Green"
+          />
+          <Hörprobe
+            :playbutton="false"
+            title="Ein Kompliment"
+            musician="Sportfreunde Stiller"
+          />
         </div>
       </div>
       <div class="rubrik haut">
@@ -78,6 +143,11 @@
             :playbutton="false"
             title="We will rock you"
             musician="Queen"
+          />
+          <Hörprobe
+            :playbutton="false"
+            title="Rockin all over the world"
+            musician="Status Quo"
           />
         </div>
       </div>

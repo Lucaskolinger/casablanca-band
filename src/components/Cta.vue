@@ -2,7 +2,10 @@
   <div class="cta-box">
     <button @click="scrollToBottom" class="cta-btn">AUFTRITT BUCHEN</button>
     <div class="icon-box">
-      <a href="https://www.google.de">
+      <a
+        href="https://instagram.com/partyband_casablanca?igshid=YmMyMTA2M2Y="
+        target="_blank"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           preserveAspectRatio="xMidYMid meet"
@@ -15,7 +18,7 @@
           />
         </svg>
       </a>
-      <a href="https://www.google.de">
+      <a href="https://www.facebook.com/pcasablanca" target="_blank">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           preserveAspectRatio="xMidYMid meet"
@@ -28,7 +31,10 @@
           />
         </svg>
       </a>
-      <a href="https://www.google.de">
+      <a
+        href="https://youtube.com/channel/UCwD7c1ZCx15oWVnJIXy2TiA"
+        target="_blank"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           preserveAspectRatio="xMidYMid meet"
