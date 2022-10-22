@@ -112,6 +112,11 @@ export default {
 
     .icon {
       color: white;
+      transition: all 300ms ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
     }
     .ig-icon {
       width: 2.8rem;

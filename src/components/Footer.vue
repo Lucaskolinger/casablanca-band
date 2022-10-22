@@ -139,6 +139,7 @@ export default {
   align-items: center;
   gap: 0.5rem;
   font-weight: 500;
+  margin-bottom: 0.25rem;
 }
 .mail-row {
   display: flex;
