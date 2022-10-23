@@ -46,46 +46,6 @@
         <div class="hp-container">
           <Hörprobe
             :playbutton="false"
-            title="A night like this"
-            musician="Caro Emerald"
-          />
-          <Hörprobe
-            :playbutton="false"
-            title="Stumblin' in"
-            musician="Suzy Quatro & Chris Norman"
-          />
-          <Hörprobe
-            :playbutton="false"
-            title="It's so easy"
-            musician="Linda Ronstadt"
-          />
-          <Hörprobe
-            :playbutton="false"
-            title="Can’t take my eyes off of you"
-            musician="Gloria Gaynor feat. Hermes House Band"
-          />
-          <Hörprobe
-            :playbutton="false"
-            title="Paradise"
-            musician="George Ezra"
-          />
-          <Hörprobe
-            :playbutton="false"
-            title="Vincent"
-            musician="Sarah Connor"
-          />
-          <Hörprobe
-            :playbutton="false"
-            title="Up"
-            musician="Olly Murs feat. Demi Lovato"
-          />
-        </div>
-      </div>
-      <div class="rubrik tanzen">
-        <h2 class="rubrik-title">Zum Tanzen und Lustig-Sein</h2>
-        <div class="hp-container">
-          <Hörprobe
-            :playbutton="false"
             title="Westerland"
             musician="Die Ärzte"
           />
@@ -123,6 +83,46 @@
             :playbutton="false"
             title="Ein Kompliment"
             musician="Sportfreunde Stiller"
+          />
+        </div>
+      </div>
+      <div class="rubrik tanzen">
+        <h2 class="rubrik-title">Zum Tanzen und Lustig-Sein</h2>
+        <div class="hp-container">
+          <Hörprobe
+            :playbutton="false"
+            title="A night like this"
+            musician="Caro Emerald"
+          />
+          <Hörprobe
+            :playbutton="false"
+            title="Stumblin' in"
+            musician="Suzy Quatro & Chris Norman"
+          />
+          <Hörprobe
+            :playbutton="false"
+            title="It's so easy"
+            musician="Linda Ronstadt"
+          />
+          <Hörprobe
+            :playbutton="false"
+            title="Can’t take my eyes off of you"
+            musician="Gloria Gaynor feat. Hermes House Band"
+          />
+          <Hörprobe
+            :playbutton="false"
+            title="Paradise"
+            musician="George Ezra"
+          />
+          <Hörprobe
+            :playbutton="false"
+            title="Vincent"
+            musician="Sarah Connor"
+          />
+          <Hörprobe
+            :playbutton="false"
+            title="Up"
+            musician="Olly Murs feat. Demi Lovato"
           />
         </div>
       </div>
