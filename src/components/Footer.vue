@@ -74,7 +74,7 @@
             />
           </svg>
         </button>
-        <p ref="email">Markus.Kurbanoglu@gmx.de</p>
+        <p ref="email">markus.kurbanoglu@gmx.de</p>
       </div>
     </div>
   </section>

@@ -10,9 +10,13 @@
             musician="Edmund"
           />
           <Hörprobe
-            :playbutton="false"
+            :playbutton="true"
             title="Shallow"
+            ytLink="https://www.youtube.com/embed/OdWTuQgtfvU?autoplay=1&showinfo=0&controls=0&mute=0"
             musician="Br Cooper & Lady Gaga"
+            timeout="140000"
+            @clickedOnPlay="handleClickedOnPlay"
+            ref="hörprobe"
           />
           <Hörprobe
             :playbutton="false"
@@ -20,24 +24,40 @@
             musician="Andreas Gabalier"
           />
           <Hörprobe
-            :playbutton="false"
+            :playbutton="true"
             title="Just give me a reason"
             musician="Pink feat. Nate Ruess"
+            ytLink="https://www.youtube.com/embed/NP0V5fG9WJc?autoplay=1&showinfo=0&controls=0&mute=0"
+            timeout="140000"
+            @clickedOnPlay="handleClickedOnPlay"
+            ref="hörprobe"
           />
           <Hörprobe
-            :playbutton="false"
+            :playbutton="true"
             title="Love on the brain"
             musician="Rihanna"
+            ytLink="https://www.youtube.com/embed/ViJAg6-PFKI?autoplay=1&showinfo=0&controls=0&mute=0"
+            timeout="95000"
+            @clickedOnPlay="handleClickedOnPlay"
+            ref="hörprobe"
           />
           <Hörprobe
-            :playbutton="false"
+            :playbutton="true"
             title="You are the sunshine of my life"
             musician="Stevie Wonder"
+            ytLink="https://www.youtube.com/embed/u9jn0OvFtdA?autoplay=1&showinfo=0&controls=0&mute=0"
+            timeout="170000"
+            @clickedOnPlay="handleClickedOnPlay"
+            ref="hörprobe"
           />
           <Hörprobe
-            :playbutton="false"
+            :playbutton="true"
             title="Ohne Dich"
             musician="Münchner Freiheit"
+            ytLink="https://www.youtube.com/embed/hMTpc_BqcN8?autoplay=1&showinfo=0&controls=0&mute=0"
+            timeout="80000"
+            @clickedOnPlay="handleClickedOnPlay"
+            ref="hörprobe"
           />
         </div>
       </div>
@@ -65,24 +85,40 @@
             musician="Josh"
           />
           <Hörprobe
-            :playbutton="false"
+            :playbutton="true"
             title="Long Train Running"
             musician="Doobie Brothers"
+            ytLink="https://www.youtube.com/embed/9xKdcBdn5hQ?autoplay=1&showinfo=0&controls=0&mute=0"
+            timeout="110000"
+            @clickedOnPlay="handleClickedOnPlay"
+            ref="hörprobe"
           />
           <Hörprobe
-            :playbutton="false"
+            :playbutton="true"
             title="Mit 66 Jahren"
             musician="Udo Jürgens"
+            ytLink="https://www.youtube.com/embed/PVHqyxd6jxU?autoplay=1&showinfo=0&controls=0&mute=0"
+            timeout="80000"
+            @clickedOnPlay="handleClickedOnPlay"
+            ref="hörprobe"
           />
           <Hörprobe
-            :playbutton="false"
+            :playbutton="true"
             title="Fuck you"
             musician="Cee Lo Green"
+            ytLink="https://www.youtube.com/embed/iZVFxlPk6aY?autoplay=1&showinfo=0&controls=0&mute=0"
+            timeout="60000"
+            @clickedOnPlay="handleClickedOnPlay"
+            ref="hörprobe"
           />
           <Hörprobe
-            :playbutton="false"
+            :playbutton="true"
             title="Ein Kompliment"
             musician="Sportfreunde Stiller"
+            ytLink="https://www.youtube.com/embed/xNMQwgyDOJ0?autoplay=1&showinfo=0&controls=0&mute=0"
+            timeout="100000"
+            @clickedOnPlay="handleClickedOnPlay"
+            ref="hörprobe"
           />
         </div>
       </div>
@@ -90,9 +126,13 @@
         <h2 class="rubrik-title">Zum Tanzen und Lustig-Sein</h2>
         <div class="hp-container">
           <Hörprobe
-            :playbutton="false"
+            :playbutton="true"
             title="A night like this"
             musician="Caro Emerald"
+            ytLink="https://www.youtube.com/embed/cPW2q7g2fXs?autoplay=1&showinfo=0&controls=0&mute=0"
+            timeout="85000"
+            @clickedOnPlay="handleClickedOnPlay"
+            ref="hörprobe"
           />
           <Hörprobe
             :playbutton="false"
@@ -105,24 +145,36 @@
             musician="Linda Ronstadt"
           />
           <Hörprobe
-            :playbutton="false"
+            :playbutton="true"
             title="Can’t take my eyes off of you"
             musician="Gloria Gaynor feat. Hermes House Band"
+            ytLink="https://www.youtube.com/embed/V6qtLZmjres?autoplay=1&showinfo=0&controls=0&mute=0"
+            timeout="60000"
+            @clickedOnPlay="handleClickedOnPlay"
+            ref="hörprobe"
           />
           <Hörprobe
-            :playbutton="false"
+            :playbutton="true"
             title="Paradise"
             musician="George Ezra"
+            ytLink="https://www.youtube.com/embed/r2bsZF3xl7E?autoplay=1&showinfo=0&controls=0&mute=0"
+            timeout="65000"
+            @clickedOnPlay="handleClickedOnPlay"
+            ref="hörprobe"
           />
           <Hörprobe
-            :playbutton="false"
+            :playbutton="true"
             title="Vincent"
             musician="Sarah Connor"
+            ytLink="https://www.youtube.com/embed/XS5KUx4xrNU?autoplay=1&showinfo=0&controls=0&mute=0"
+            timeout="80000"
           />
           <Hörprobe
-            :playbutton="false"
+            :playbutton="true"
             title="Up"
             musician="Olly Murs feat. Demi Lovato"
+            ytLink="https://www.youtube.com/embed/y0jfAQ7WeMs?autoplay=1&showinfo=0&controls=0&mute=0"
+            timeout="80000"
           />
         </div>
       </div>
@@ -162,6 +214,15 @@ export default {
   components: {
     Hörprobe,
   },
+  // methods: {
+  //   handleClickedOnPlay(title) {
+  //     for (const hörprobe of this.$refs.hörprobe) {
+  //       if (hörprobe.title != title) {
+  //         hörprobe.handleClickOnPause();
+  //       }
+  //     }
+  //   },
+  // },
 };
 </script>
 
