@@ -1,67 +1,97 @@
 ---
+import hörproben from "../data/hörproben.json";
 import "../assets/stylesheets/global.scss";
-import Hörprobe from "../components/Hörprobe.astro";
+import { Icon } from "astro-icon";
 ---
 
 <div class="grid-flex-wrapper">
   <div class="repertoire-container">
-    <div class="rubrik kuscheln">
+    <div class="rubrik">
       <h2 class="rubrik-title">Zum Kuscheln</h2>
-      <div class="hp-container">
-        <Hörprobe title="Zam oid wearn" musician="Edmund" />
-        <Hörprobe title="Shallow" musician="Br Cooper & Lady Gaga" />
-        <Hörprobe title="So liab hob i di" musician="Andreas Gabalier" />
-        <Hörprobe
-          title="Just give me a reason"
-          musician="Pink feat. Nate Ruess"
-        />
-        <Hörprobe title="Love on the brain" musician="Rihanna" />
-        <Hörprobe
-          title="You are the sunshine of my life"
-          musician="Stevie Wonder"
-        />
-        <Hörprobe title="Ohne Dich" musician="Münchner Freiheit" />
+      <div class="hörproben-column">
+        {
+          hörproben
+            .filter((hörprobe) => {
+              return hörprobe.kategorie === "Zum Kuscheln";
+            })
+            .map((hörprobe) => (
+              <article class="hörproben-container">
+                {(hörprobe.link && (
+                  <a href={hörprobe.link} target="_blank">
+                    <Icon name="fa:youtube-play" />
+                  </a>
+                )) || <div class="link-placeholder" />}
+                <h2 class="title">{hörprobe.titel}</h2>
+                <p class="musician">{hörprobe.künstler}</p>
+              </article>
+            ))
+        }
       </div>
     </div>
-    <div class="rubrik party">
+    <div class="rubrik">
       <h2 class="rubrik-title">Zum Party Machen</h2>
-      <div class="hp-container">
-        <Hörprobe
-          title="Westerland"
-          musician="Die Ärzte"
-          ytLink="https://www.youtube.com/embed/mxDqVd7f5TU"
-        />
-        <Hörprobe title="Atemlos" musician="Helene Fischer" />
-        <Hörprobe title="Simply the best" musician="Tina Turner" />
-        <Hörprobe title="Expresso & Tschianti" musician="Josh" />
-        <Hörprobe title="Long Train Running" musician="Doobie Brothers" />
-        <Hörprobe title="Mit 66 Jahren" musician="Udo Jürgens" />
-        <Hörprobe title="Fuck you" musician="Cee Lo Green" />
-        <Hörprobe title="Ein Kompliment" musician="Sportfreunde Stiller" />
+      <div class="hörproben-column">
+        {
+          hörproben
+            .filter((hörprobe) => {
+              return hörprobe.kategorie === "Zum Party Machen";
+            })
+            .map((hörprobe) => (
+              <article class="hörproben-container">
+                {(hörprobe.link && (
+                  <a href={hörprobe.link} target="_blank">
+                    <Icon name="fa:youtube-play" />
+                  </a>
+                )) || <div class="link-placeholder" />}
+                <h2 class="title">{hörprobe.titel}</h2>
+                <p class="musician">{hörprobe.künstler}</p>
+              </article>
+            ))
+        }
       </div>
     </div>
-    <div class="rubrik tanzen">
+    <div class="rubrik">
       <h2 class="rubrik-title">Zum Tanzen und Lustig-Sein</h2>
-      <div class="hp-container">
-        <Hörprobe title="A night like this" musician="Caro Emerald" />
-        <Hörprobe title="Stumblin' in" musician="Suzy Quatro & Chris Norman" />
-        <Hörprobe title="It's so easy" musician="Linda Ronstadt" />
-        <Hörprobe
-          title="Can’t take my eyes off of you"
-          musician="Gloria Gaynor feat. Hermes House Band"
-        />
-        <Hörprobe title="Paradise" musician="George Ezra" />
-        <Hörprobe title="Vincent" musician="Sarah Connor" />
-        <Hörprobe title="Up" musician="Olly Murs feat. Demi Lovato" />
+      <div class="hörproben-column">
+        {
+          hörproben
+            .filter((hörprobe) => {
+              return hörprobe.kategorie === "Zum Tanzen und Lustig-Sein";
+            })
+            .map((hörprobe) => (
+              <article class="hörproben-container">
+                {(hörprobe.link && (
+                  <a href={hörprobe.link} target="_blank">
+                    <Icon name="fa:youtube-play" />
+                  </a>
+                )) || <div class="link-placeholder" />}
+                <h2 class="title">{hörprobe.titel}</h2>
+                <p class="musician">{hörprobe.künstler}</p>
+              </article>
+            ))
+        }
       </div>
     </div>
-    <div class="rubrik haut">
+    <div class="rubrik">
       <h2 class="rubrik-title">Zum "Aus-Der-Haut-Fahren"</h2>
-      <div class="hp-container">
-        <Hörprobe title="Highway to hell" musician="ACDC" />
-        <Hörprobe title="Final Countdown" musician="Europe" />
-        <Hörprobe title="We will rock you" musician="Queen" />
-        <Hörprobe title="Rockin all over the world" musician="Status Quo" />
+      <div class="hörproben-column">
+        {
+          hörproben
+            .filter((hörprobe) => {
+              return hörprobe.kategorie === "Zum Aus-Der-Haut-Fahren";
+            })
+            .map((hörprobe) => (
+              <article class="hörproben-container">
+                {(hörprobe.link && (
+                  <a href={hörprobe.link} target="_blank">
+                    <Icon name="fa:youtube-play" />
+                  </a>
+                )) || <div class="link-placeholder" />}
+                <h2 class="title">{hörprobe.titel}</h2>
+                <p class="musician">{hörprobe.künstler}</p>
+              </article>
+            ))
+        }
       </div>
     </div>
   </div>
@@ -96,10 +126,59 @@ import Hörprobe from "../components/Hörprobe.astro";
       font-size: 1rem;
     }
 
-    .hp-container {
+    .hörproben-column {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
+    }
+  }
+
+  .hörproben-container {
+    display: flex;
+    background-color: $accent-color;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    border-radius: 1rem;
+
+    .title {
+      font-size: 1rem;
+      line-height: 1.4;
+
+      @media (min-width: $bp-sm) {
+        max-width: 10rem;
+      }
+    }
+
+    .musician {
+      opacity: 0.8;
+      font-size: 0.75rem;
+      font-weight: 500;
+      line-height: 1.4;
+      margin-left: auto;
+      text-align: right;
+
+      @media (min-width: $bp-sm) {
+        max-width: 6rem;
+      }
+    }
+
+    .link-placeholder {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 0.8rem;
+    }
+
+    [astro-icon="fa:youtube-play"] {
+      width: 2rem;
+      color: white;
+      margin-right: 0.8rem;
+      flex: none;
+      transition: all 200ms ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 </style>

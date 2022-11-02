@@ -89,10 +89,8 @@ export default {
     transition: all 300ms ease-in-out;
 
     &:hover {
-      background-color: $accent-color;
-      color: white;
-      filter: drop-shadow(0px 0px 20px #fff);
-      transform: translateX(-0.25rem);
+      // filter: drop-shadow(0px 0px 20px #fff);
+      transform: scale(1.05);
     }
 
     @media (min-width: $bp-md) {

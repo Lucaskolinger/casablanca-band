@@ -3,7 +3,7 @@
     <div class="repertoire-container">
       <div class="rubrik kuscheln">
         <h2 class="rubrik-title">Zum Kuscheln</h2>
-        <div class="hp-container">
+        <div class="hörproben-column">
           <Hörprobe
             :playbutton="false"
             title="Zam oid wearn"
@@ -63,7 +63,7 @@
       </div>
       <div class="rubrik party">
         <h2 class="rubrik-title">Zum Party Machen</h2>
-        <div class="hp-container">
+        <div class="hörproben-column">
           <Hörprobe
             :playbutton="false"
             title="Westerland"
@@ -124,7 +124,7 @@
       </div>
       <div class="rubrik tanzen">
         <h2 class="rubrik-title">Zum Tanzen und Lustig-Sein</h2>
-        <div class="hp-container">
+        <div class="hörproben-column">
           <Hörprobe
             :playbutton="true"
             title="A night like this"
@@ -180,7 +180,7 @@
       </div>
       <div class="rubrik haut">
         <h2 class="rubrik-title">Zum "Aus-Der-Haut-Fahren"</h2>
-        <div class="hp-container">
+        <div class="hörproben-column">
           <Hörprobe
             :playbutton="false"
             title="Highway to hell"
@@ -255,7 +255,7 @@ export default {
     font-size: 1rem;
   }
 
-  .hp-container {
+  .hörproben-column {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;

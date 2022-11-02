@@ -2,7 +2,7 @@
 import Hero from "../components/Hero.vue";
 import Cta from "../components/Cta.vue";
 import Musiker from "../components/Musiker.vue";
-import Repertiore from "../components/Repertoire.vue";
+import Repertoire from "../components/Repertoire.astro";
 import Gallery from "../components/Gallery.vue";
 import Footer from "../components/Footer.vue";
 
@@ -16,6 +16,10 @@ import "../assets/stylesheets/global.scss";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Casablanca Hochzeits- und Partyband aus München. Mit 100% Live-Musik machen wir Euer Event zum unvergesslichen Erlebnis!!!"
+    />
     <title>Casablanca Liveband</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,7 +32,7 @@ import "../assets/stylesheets/global.scss";
     <Hero />
     <Cta client:idle />
     <Musiker client:idle />
-    <Repertiore client:idle />
+    <Repertoire />
     <Gallery />
     <Footer client:idle />
   </body>

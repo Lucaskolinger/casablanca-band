@@ -36,42 +36,60 @@
 
   <div class="grid-flex-wrapper">
     <section class="musiker-grid">
-      <img
-        class="portrait"
-        @click="showHerbertModal = true"
-        src="../assets/images/portraits/herbert-1.webp"
-        alt=""
-      />
-      <img
-        class="portrait"
-        @click="showMarkusModal = true"
-        src="../assets/images/portraits/markus-1.webp"
-        alt=""
-      />
-      <img
-        class="portrait"
-        @click="showChrisModal = true"
-        src="../assets/images/portraits/chris-1.webp"
-        alt=""
-      />
-      <img
-        class="portrait"
-        @click="showMartinModal = true"
-        src="../assets/images/portraits/martin-1.webp"
-        alt=""
-      />
-      <img
-        class="portrait"
-        @click="showMikeModal = true"
-        src="../assets/images/portraits/mike-1.webp"
-        alt=""
-      />
-      <img
-        class="portrait"
-        @click="showJuliaModal = true"
-        src="../assets/images/portraits/julia-1.webp"
-        alt=""
-      />
+      <div class="portrait-wrapper">
+        <span @click="showHerbertModal = true">+</span>
+        <img
+          class="portrait"
+          @click="showHerbertModal = true"
+          src="../assets/images/portraits/herbert-2.webp"
+          alt=""
+        />
+      </div>
+      <div class="portrait-wrapper">
+        <span @click="showMarkusModal = true">+</span>
+        <img
+          class="portrait"
+          @click="showMarkusModal = true"
+          src="../assets/images/portraits/markus-1.webp"
+          alt=""
+        />
+      </div>
+      <div class="portrait-wrapper">
+        <span @click="showChrisModal = true">+</span>
+        <img
+          class="portrait"
+          @click="showChrisModal = true"
+          src="../assets/images/portraits/chris-1.webp"
+          alt=""
+        />
+      </div>
+      <div class="portrait-wrapper">
+        <span @click="showMartinModal = true">+</span>
+        <img
+          class="portrait"
+          @click="showMartinModal = true"
+          src="../assets/images/portraits/martin-1.webp"
+          alt=""
+        />
+      </div>
+      <div class="portrait-wrapper">
+        <span @click="showMikeModal = true">+</span>
+        <img
+          class="portrait"
+          @click="showMikeModal = true"
+          src="../assets/images/portraits/mike-1.webp"
+          alt=""
+        />
+      </div>
+      <div class="portrait-wrapper">
+        <span @click="showJuliaModal = true">+</span>
+        <img
+          class="portrait"
+          @click="showJuliaModal = true"
+          src="../assets/images/portraits/julia-2.webp"
+          alt=""
+        />
+      </div>
     </section>
   </div>
 </template>
@@ -146,16 +164,42 @@ export default {
   @media (min-width: $bp-sm) {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .portrait-wrapper {
+    position: relative;
+    transition: all 100ms ease-in-out;
+
+    // &:hover {
+    //   -webkit-transform: scale(1.05);
+    // }
+
+    span {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 1;
+      color: black;
+      background-color: rgb(231, 228, 228);
+      opacity: 0.8;
+      height: 2rem;
+      width: 2rem;
+      text-align: center;
+      border-radius: 100%;
+      font-size: 2rem;
+      cursor: pointer;
+      transition: all 200ms ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+        background-color: $accent-color;
+      }
+    }
+  }
+
   .portrait {
-    cursor: pointer;
     width: 100%;
     border-radius: 2rem;
-    transition: transform 100ms ease-in-out;
     filter: drop-shadow(0px 0px 20px #000);
-
-    &:hover {
-      transform: translate(0rem, -0.5rem);
-    }
   }
 }
 </style>

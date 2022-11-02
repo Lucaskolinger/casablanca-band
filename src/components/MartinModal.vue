@@ -85,20 +85,20 @@ export default {};
   justify-content: center;
   align-items: center;
   background-color: #000000da;
-  z-index: 1;
+  z-index: 2;
 
   .modal {
     background-color: rgb(220, 220, 220);
     border-radius: 2.2rem;
     width: 80vw;
     max-width: 30rem;
-    z-index: 2;
+    z-index: 3;
     filter: drop-shadow(0px 0px 90px rgba(213, 27, 76, 0.5));
 
     .img {
       aspect-ratio: 16/14;
-      background-image: url("../assets/images/portraits/martin-2.webp");
-      background-position: 0% 20%;
+      background-image: url("../assets/images/portraits/martin-1.webp");
+      background-position: 0% 10%;
       background-size: cover;
       position: relative;
       border-top-right-radius: 2rem;
