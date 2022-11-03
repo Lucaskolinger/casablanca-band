@@ -1,31 +1,6 @@
 <template>
   <div class="flex-wrapper">
     <section class="gallery-container">
-      <!-- <img
-        class="gallery-image gruppe-geigenkasten"
-        src="../assets/images/grid/gruppe-geigenkasten.webp"
-        alt=""
-      />
-      <img
-        class="gallery-image chris-stehend"
-        src="../assets/images/grid/chris-stehend.webp"
-        alt=""
-      />
-      <img
-        class="gallery-image gruppe-geiger"
-        src="../assets/images/grid/gruppe-geiger.webp"
-        alt=""
-      />
-      <img
-        class="gallery-image chris-trommel"
-        src="../assets/images/grid/chris-trommel.webp"
-        alt=""
-      />
-      <img
-        class="gallery-image gruppe-socken"
-        src="../assets/images/grid/gruppe-socken.webp"
-        alt=""
-      /> -->
       <div class="gallery-image gruppe-geigenkasten"></div>
       <div class="gallery-image chris-stehend"></div>
       <div class="gallery-image gruppe-geiger"></div>
@@ -77,30 +52,30 @@ export default {};
   }
   .gruppe-geigenkasten {
     grid-column-start: 1;
-    grid-column-end: 3;
-    background-image: url("../assets/images/grid/gruppe-geigenkasten.webp");
-    background-position: 0% 50%;
+    grid-column-end: 2;
+    background-image: url("../assets/images/grid/chris-trommel.webp");
+    // background-position: 100% 100%;
     background-size: cover;
   }
   .gruppe-socken {
-    grid-column-start: 2;
+    grid-column-start: 3;
     grid-column-end: -1;
     background-image: url("../assets/images/grid/gruppe-socken.webp");
     background-position: 0% 50%;
     background-size: cover;
   }
   .chris-stehend {
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-column-end: -1;
-    background-image: url("../assets/images/grid/chris-stehend.webp");
+    background-image: url("../assets/images/grid/hochzeitsmesse.webp");
     background-position: 0% 50%;
     background-size: cover;
   }
   .chris-trommel {
     grid-column-start: 1;
-    grid-column-end: 2;
-    background-image: url("../assets/images/grid/chris-trommel.webp");
-    background-position: 0% 50%;
+    grid-column-end: 3;
+    background-image: url("../assets/images/grid/gruppe-geigenkasten.webp");
+    background-position: 50% 100%;
     background-size: cover;
   }
 }

@@ -1,0 +1,146 @@
+---
+import "../assets/stylesheets/global.scss";
+import { Icon } from "astro-icon";
+import sektempfang from "../assets/images/info/sektempfang.webp";
+import abschlusstanz from "../assets/images/info/abschlusstanz.webp";
+import brautverziehen from "../assets/images/info/brautverziehen.webp";
+import tanzmusik from "../assets/images/info/tanzmusik.webp";
+---
+
+<script>
+  const button = document.getElementById("cta-2-btn");
+  const scrollToBottom = () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+  };
+  button.addEventListener("click", scrollToBottom);
+</script>
+
+<div class="flex-wrapper">
+  <section class="info-container">
+    <div class="info-welcome">
+      <p class="subtitle">Vom..</p>
+      <h3 class="title">Sektempfang</h3>
+      <img class="image" src={sektempfang} alt="Sektempfang" />
+      <Icon name="bi:arrow-down-circle-fill" />
+      <p class="subtitle">Über...</p>
+      <h3 class="title">Tanzmusik</h3>
+      <img class="image" src={tanzmusik} alt="Tanzmusik" />
+      <Icon name="bi:arrow-down-circle-fill" />
+      <p class="subtitle">...Bis hin zur...</p>
+      <h3 class="title">Partymusik</h3>
+      <p class="subtitle-2">(Brautverziehen)</p>
+      <img
+        class="image"
+        src={brautverziehen}
+        alt="Brautverziehen Party Musik"
+      />
+      <Icon name="bi:arrow-down-circle-fill" />
+      <p class="subtitle">...und letztlich dem...</p>
+      <h3 class="title">Abschlusstanz</h3>
+      <img class="image" src={abschlusstanz} alt="Abschlusstanz" />
+      <Icon name="bi:arrow-down-circle-fill" />
+
+      <p class="subtitle">...begleiten wir euch mit 100% Live-Musik.</p>
+    </div>
+    <div class="info-numbers">
+      <p class="number">6 Musiker</p>
+      <p class="number">12 Instrumente</p>
+      <p class="number">200 Lieder</p>
+      <p class="number">100% Stimmung</p>
+      <p class="cta-text">
+        Auf Wunsch übernehmen wir auch die Moderation am Hochzeitstag sowie die
+        musikalische Umrahmung Eurer kirchlichen oder freien Trauung. Gerne
+        unterbreiten wir Euch ein maßgeschneidertes Angebot und beantworten
+        weitere Fragen.
+      </p>
+      <Icon name="bi:arrow-down-circle-fill" />
+      <button id="cta-2-btn" class="cta-btn">AUFTRITT BUCHEN</button>
+    </div>
+  </section>
+</div>
+
+<style lang="scss">
+  @import "../assets/stylesheets/setup";
+
+  .flex-wrapper {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .info-container {
+      width: 100%;
+      max-width: 50rem;
+      margin-inline: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      color: $accent-color;
+
+      .info-welcome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-block: 2rem;
+        gap: 1rem;
+
+        .image {
+          width: 50%;
+          border-radius: 2rem;
+        }
+
+        .title {
+          color: $accent-color;
+          font-size: 1.2rem;
+        }
+        .subtitle {
+          text-align: center;
+          padding-inline: 0.5rem;
+          line-height: 1.5;
+        }
+
+        [astro-icon] {
+          width: 2rem;
+          color: $accent-color;
+        }
+      }
+      .info-numbers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 7rem;
+        gap: 2rem;
+
+        .number {
+          font-size: 1.2rem;
+          font-weight: 600;
+          background-color: $accent-color;
+          color: white;
+          padding: 2rem;
+          border-radius: 2rem;
+          width: 100%;
+          text-align: center;
+        }
+        [astro-icon] {
+          width: 2rem;
+          color: $accent-color;
+        }
+
+        .cta-text {
+          text-align: center;
+          line-height: 1.5;
+          margin-top: 1rem;
+        }
+        .cta-btn {
+          border: none;
+          background-color: $accent-color;
+          padding: 2rem;
+          color: white;
+          font-weight: 800;
+          border-radius: 2rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+</style>

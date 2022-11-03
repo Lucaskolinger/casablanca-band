@@ -67,15 +67,14 @@ export default {
 @import "../assets/stylesheets/setup";
 
 .cta-box {
-  width: 100%;
   background-color: $accent-color;
   padding-block: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
+  border-radius: 2rem;
+  margin-inline: 1rem;
 
   .cta-btn {
     padding-block: 0.75rem;

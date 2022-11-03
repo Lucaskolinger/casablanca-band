@@ -144,8 +144,8 @@ export default {
   background: linear-gradient($accent-color, white);
   position: absolute;
   z-index: -1;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
 }
 
 .grid-flex-wrapper {
@@ -160,7 +160,7 @@ export default {
   gap: 0.5rem;
   margin-inline: 2rem;
   max-width: 44rem;
-
+  padding-top: 2rem;
   @media (min-width: $bp-sm) {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -181,11 +181,11 @@ export default {
       color: black;
       background-color: rgb(231, 228, 228);
       opacity: 0.8;
-      height: 2rem;
-      width: 2rem;
+      height: 1.5rem;
+      width: 1.5rem;
       text-align: center;
       border-radius: 100%;
-      font-size: 2rem;
+      font-size: 1.5rem;
       cursor: pointer;
       transition: all 200ms ease-in-out;
 
