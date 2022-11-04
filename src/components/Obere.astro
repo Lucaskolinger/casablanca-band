@@ -8,7 +8,7 @@ import tanzmusik from "../assets/images/info/tanzmusik.webp";
 ---
 
 <script>
-  const button = document.getElementById("cta-2-btn");
+  const button = document.getElementById("cta-btn");
   const scrollToBottom = () => {
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
   };
@@ -18,45 +18,80 @@ import tanzmusik from "../assets/images/info/tanzmusik.webp";
 <div class="flex-wrapper">
   <section class="info-container">
     <div class="info-welcome">
-      <p class="subtitle">Vom..</p>
-      <h3 class="title">Sektempfang</h3>
-      <img class="image" src={sektempfang} alt="Sektempfang" />
-      <Icon name="bi:arrow-down-circle-fill" />
-      <p class="subtitle">Über...</p>
-      <h3 class="title">Tanzmusik</h3>
-      <img class="image" src={tanzmusik} alt="Tanzmusik" />
-      <Icon name="bi:arrow-down-circle-fill" />
-      <p class="subtitle">...Bis hin zur...</p>
-      <h3 class="title">Partymusik</h3>
-      <p class="subtitle-2">(Brautverziehen)</p>
-      <img
-        class="image"
-        src={brautverziehen}
-        alt="Brautverziehen Party Musik"
-      />
-      <Icon name="bi:arrow-down-circle-fill" />
-      <p class="subtitle">...und letztlich dem...</p>
-      <h3 class="title">Abschlusstanz</h3>
-      <img class="image" src={abschlusstanz} alt="Abschlusstanz" />
-      <Icon name="bi:arrow-down-circle-fill" />
-
-      <p class="subtitle">...begleiten wir euch mit 100% Live-Musik.</p>
+      <div class="welcome-area">
+        <p class="subtitle">Vom</p>
+        <h3 class="title">Sektempfang</h3>
+        <img class="image" src={sektempfang} alt="Sektempfang" />
+      </div>
+      <div class="welcome-area">
+        <p class="subtitle">Über</p>
+        <h3 class="title">Tanzmusik</h3>
+        <img class="image" src={tanzmusik} alt="Tanzmusik" />
+      </div>
+      <div class="welcome-area">
+        <p class="subtitle">Bis hin zur</p>
+        <h3 class="title">Partymusik</h3>
+        <img
+          class="image"
+          src={brautverziehen}
+          alt="Brautverziehen Party Musik"
+        />
+      </div>
+      <div class="welcome-area">
+        <p class="subtitle">und letztlich dem</p>
+        <h3 class="title">Abschlusstanz</h3>
+        <img class="image" src={abschlusstanz} alt="Abschlusstanz" />
+      </div>
+      <p class="result-text">begleiten wir euch mit 100% Live-Musik.</p>
     </div>
     <div class="info-numbers">
-      <p class="number">6 Musiker</p>
-      <p class="number">12 Instrumente</p>
-      <p class="number">200 Lieder</p>
-      <p class="number">100% Stimmung</p>
-      <p class="cta-text">
-        Auf Wunsch übernehmen wir auch die Moderation am Hochzeitstag sowie die
-        musikalische Umrahmung Eurer kirchlichen oder freien Trauung. Gerne
-        unterbreiten wir Euch ein maßgeschneidertes Angebot und beantworten
-        weitere Fragen.
-      </p>
-      <Icon name="bi:arrow-down-circle-fill" />
-      <button id="cta-2-btn" class="cta-btn">AUFTRITT BUCHEN</button>
+      <div class="social-row">
+        <a
+          href="https://youtube.com/channel/UCwD7c1ZCx15oWVnJIXy2TiA"
+          target="_blank"
+        >
+          <Icon name="ant-design:youtube-filled" />
+        </a>
+        <a
+          href="https://instagram.com/partyband_casablanca?igshid=YmMyMTA2M2Y="
+          target="_blank"
+        >
+          <Icon name="ant-design:instagram-filled" />
+        </a>
+        <a href="https://www.facebook.com/pcasablanca" target="_blank">
+          <Icon name="ant-design:facebook-filled" />
+        </a>
+      </div>
+      <div class="number">
+        <Icon name="akar-icons:people-group" />
+        <p>6 Musiker</p>
+      </div>
+      <div class="number">
+        <Icon name="fa-solid:guitar" />
+        <p>12 Instrumente</p>
+      </div>
+      <div class="number">
+        <Icon name="bi:music-note-list" />
+        <p>200 Lieder</p>
+      </div>
+      <div class="number">
+        <Icon name="akar-icons:face-very-happy" />
+        <p>100% Stimmung</p>
+      </div>
     </div>
   </section>
+</div>
+<div class="flex-wrapper-2">
+  <p class="cta-text">
+    Auf Wunsch übernehmen wir auch die Moderation am Hochzeitstag sowie die
+    musikalische Umrahmung Eurer kirchlichen oder freien Trauung. Gerne
+    unterbreiten wir Euch ein maßgeschneidertes Angebot und beantworten weitere
+    Fragen.
+  </p>
+  <Icon name="bi:arrow-down-circle-fill" />
+  <button id="cta-btn" class="cta-btn"
+    ><Icon name="fe:mail" />AUFTRITT BUCHEN
+  </button>
 </div>
 
 <style lang="scss">
@@ -64,83 +99,171 @@ import tanzmusik from "../assets/images/info/tanzmusik.webp";
 
   .flex-wrapper {
     width: 100%;
-    background-color: white;
+    background-color: $accent-color;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 
     .info-container {
       width: 100%;
       max-width: 50rem;
       margin-inline: 1rem;
+      margin-block: 2rem;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      color: $accent-color;
+      grid-template-columns: 1fr;
+      align-items: start;
+      gap: 1rem;
+
+      @media (min-width: $bp-sm) {
+        grid-template-columns: 1fr 1fr;
+      }
 
       .info-welcome {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-block: 2rem;
-        gap: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1.8rem;
+        column-gap: 1rem;
+        color: $off-white;
+        font-weight: 600;
+
+        @media (min-width: $bp-sm) {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .welcome-area {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
 
         .image {
-          width: 50%;
+          width: 100%;
           border-radius: 2rem;
         }
 
-        .title {
-          color: $accent-color;
-          font-size: 1.2rem;
-        }
         .subtitle {
+          margin-bottom: 0.3rem;
+          width: 100%;
           text-align: center;
-          padding-inline: 0.5rem;
           line-height: 1.5;
+          font-size: 0.8rem;
+          font-weight: 500;
+        }
+
+        .subtitle-2 {
+          margin-bottom: 1rem;
+          width: 100%;
+          text-align: center;
+        }
+
+        .title {
+          // font-size: 1.2rem;
+          margin-bottom: 1rem;
         }
 
         [astro-icon] {
           width: 2rem;
           color: $accent-color;
         }
+
+        .result-text {
+          grid-column-start: 1;
+          grid-column-end: -1;
+          width: 100%;
+          text-align: center;
+          margin-top: 1rem;
+        }
       }
+
       .info-numbers {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 7rem;
         gap: 2rem;
 
-        .number {
-          font-size: 1.2rem;
-          font-weight: 600;
-          background-color: $accent-color;
-          color: white;
-          padding: 2rem;
-          border-radius: 2rem;
+        .social-row {
           width: 100%;
-          text-align: center;
-        }
-        [astro-icon] {
-          width: 2rem;
-          color: $accent-color;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+
+          [astro-icon] {
+            width: 3rem;
+            color: $off-white;
+            transition: all 300ms ease-in-out;
+
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+          [astro-icon="ant-design:youtube-filled"] {
+            width: 3.5rem;
+          }
         }
 
-        .cta-text {
-          text-align: center;
-          line-height: 1.5;
-          margin-top: 1rem;
-        }
-        .cta-btn {
-          border: none;
-          background-color: $accent-color;
-          padding: 2rem;
-          color: white;
-          font-weight: 800;
+        .number {
+          font-weight: 600;
+          background-color: $off-white;
+          color: $accent-color;
           border-radius: 2rem;
-          cursor: pointer;
+          width: 80%;
+          padding-block: 1rem;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          padding-left: 2rem;
+          gap: 2rem;
+
+          [astro-icon] {
+            width: 1.5rem;
+          }
         }
       }
+    }
+  }
+
+  .flex-wrapper-2 {
+    display: flex;
+    background-color: $accent-color;
+    color: $off-white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media (min-width: $bp-md) {
+      flex-direction: row-reverse;
+    }
+
+    .cta-text {
+      text-align: center;
+      line-height: 1.5;
+      margin-top: 1rem;
+      width: 80vw;
+      max-width: 60ch;
+    }
+    [astro-icon] {
+      width: 2rem;
+      color: $accent-color;
+    }
+
+    .cta-btn {
+      border: none;
+      background-color: white;
+      padding-inline: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 1.5rem;
+      color: $accent-color;
+      font-weight: 800;
+      border-radius: 2rem;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
     }
   }
 </style>

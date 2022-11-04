@@ -144,8 +144,6 @@ export default {
   background: linear-gradient($accent-color, white);
   position: absolute;
   z-index: -1;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
 }
 
 .grid-flex-wrapper {

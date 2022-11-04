@@ -122,7 +122,7 @@ export default {
 }
 
 .contact-info-container {
-  background-color: white;
+  background-color: $off-white;
   max-width: 20rem;
   padding: 1rem;
   border-radius: 1rem;
