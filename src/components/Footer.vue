@@ -74,7 +74,7 @@
             />
           </svg>
         </button>
-        <p ref="email">markus.kurbanoglu@gmx.de</p>
+        <p ref="email">info@casablanca-band.com</p>
       </div>
     </div>
   </section>

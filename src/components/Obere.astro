@@ -108,7 +108,7 @@ import tanzmusik from "../assets/images/info/tanzmusik.webp";
 
     .info-container {
       width: 100%;
-      max-width: 50rem;
+      max-width: 44rem;
       margin-inline: 1rem;
       margin-block: 2rem;
       display: grid;
@@ -116,9 +116,9 @@ import tanzmusik from "../assets/images/info/tanzmusik.webp";
       align-items: start;
       gap: 1rem;
 
-      @media (min-width: $bp-sm) {
-        grid-template-columns: 1fr 1fr;
-      }
+      // @media (min-width: $bp-sm) {
+      //   grid-template-columns: 1fr 1fr;
+      // }
 
       .info-welcome {
         display: grid;
@@ -150,6 +150,10 @@ import tanzmusik from "../assets/images/info/tanzmusik.webp";
           line-height: 1.5;
           font-size: 0.8rem;
           font-weight: 500;
+
+          @media (min-width: $bp-sm) {
+            font-size: 1.1rem;
+          }
         }
 
         .subtitle-2 {
@@ -159,8 +163,11 @@ import tanzmusik from "../assets/images/info/tanzmusik.webp";
         }
 
         .title {
-          // font-size: 1.2rem;
           margin-bottom: 1rem;
+
+          @media (min-width: $bp-sm) {
+            font-size: 1.3rem;
+          }
         }
 
         [astro-icon] {
@@ -233,9 +240,9 @@ import tanzmusik from "../assets/images/info/tanzmusik.webp";
     justify-content: center;
     flex-direction: column;
 
-    @media (min-width: $bp-md) {
-      flex-direction: row-reverse;
-    }
+    // @media (min-width: $bp-md) {
+    //   flex-direction: row-reverse;
+    // }
 
     .cta-text {
       text-align: center;

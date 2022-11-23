@@ -1,4 +1,5 @@
 <template>
+  <h1 class="first-title">Hochzeit - Geburtstag - Firmenfeier</h1>
   <div class="hero-container">
     <img class="hero-img" src="../assets/images/gruppe-sw.webp" alt="" />
   </div>
@@ -11,6 +12,19 @@ export default {};
 
 <style lang="scss" scoped>
 @import "../assets/stylesheets/setup";
+
+.first-title {
+  color: $accent-color;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  height: 2rem;
+  margin-top: 2rem;
+
+  @media (min-width: $bp-sm) {
+    font-size: 1.3rem;
+  }
+}
 
 .hero-container {
   width: 100%;

@@ -1,9 +1,6 @@
 <template>
   <Transition>
-    <HerbertModal
-      v-show="showHerbertModal"
-      @close-modal="showHerbertModal = false"
-    />
+    <JuliaModal v-show="showJuliaModal" @close-modal="showJuliaModal = false" />
   </Transition>
 
   <Transition>
@@ -29,7 +26,10 @@
   </Transition>
 
   <Transition>
-    <JuliaModal v-show="showJuliaModal" @close-modal="showJuliaModal = false" />
+    <HerbertModal
+      v-show="showHerbertModal"
+      @close-modal="showHerbertModal = false"
+    />
   </Transition>
 
   <div class="background"></div>
@@ -37,11 +37,11 @@
   <div class="grid-flex-wrapper">
     <section class="musiker-grid">
       <div class="portrait-wrapper">
-        <span @click="showHerbertModal = true">+</span>
+        <span @click="showJuliaModal = true">+</span>
         <img
           class="portrait"
-          @click="showHerbertModal = true"
-          src="../assets/images/portraits/herbert-2.webp"
+          @click="showJuliaModal = true"
+          src="../assets/images/portraits/julia-2.webp"
           alt=""
         />
       </div>
@@ -82,11 +82,11 @@
         />
       </div>
       <div class="portrait-wrapper">
-        <span @click="showJuliaModal = true">+</span>
+        <span @click="showHerbertModal = true">+</span>
         <img
           class="portrait"
-          @click="showJuliaModal = true"
-          src="../assets/images/portraits/julia-2.webp"
+          @click="showHerbertModal = true"
+          src="../assets/images/portraits/herbert-2.webp"
           alt=""
         />
       </div>
