@@ -77,6 +77,10 @@
         <p ref="email">info@casablanca-band.com</p>
       </div>
     </div>
+    <div class="kleingedrucktes-row">
+      <a href="/impressum/">Impressum</a>
+      <a href="/datenschutz/">Datenschutz</a>
+    </div>
   </section>
 </template>
 
@@ -117,6 +121,7 @@ export default {
   border-top-right-radius: 2rem;
   padding: 2rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -157,5 +162,20 @@ svg {
   width: 1.5rem;
   cursor: pointer;
   color: $accent-color;
+}
+
+.kleingedrucktes-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.kleingedrucktes-row a {
+  color: $off-white;
+}
+
+.kleingedrucktes-row a:hover {
+  color: white;
 }
 </style>

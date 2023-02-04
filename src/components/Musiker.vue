@@ -92,6 +92,14 @@
       </div>
     </section>
   </div>
+  <p class="repertoire-info">
+    Unser vielseitiges Repertoire umfasst... Klassische Walzer, bekannte
+    Evergreens, ruhige Backgroundmusik, romantische Balladen, internationale
+    Bekanntheiten aus Österreich, Italien, Frankreich und Portugal, lustige
+    Schunkelrunden, flotte Tanzmusik, fetzige Schlager, rockige Klassiker,
+    moderne Popmusik, stimmungsvolle Partymusik, u.v.m. Folgend einige
+    Beispiele:
+  </p>
 </template>
 
 <script>
@@ -199,5 +207,20 @@ export default {
     border-radius: 2rem;
     filter: drop-shadow(0px 0px 20px #000);
   }
+}
+
+.repertoire-info {
+  position: relative;
+  max-width: 44rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  margin-top: 2.5rem;
+  color: $accent-color;
+  line-height: 1.3;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  text-align: center;
 }
 </style>

@@ -94,6 +94,10 @@ import { Icon } from "astro-icon";
         }
       </div>
     </div>
+    <p class="testimonials-info">
+      Wollt ihr mehr von uns hören/sehen? Meldet Euch bei uns. Gerne senden wir
+      Euch Live-Videos von unseren Auftritten zu.
+    </p>
     <h1 class="referenzen-title">Referenzen</h1>
   </div>
 </div>
@@ -184,7 +188,13 @@ import { Icon } from "astro-icon";
   }
 
   .referenzen-title {
-    margin-top: 1rem;
     font-size: 1rem;
+    grid-column-start: 1;
+    grid-colume-end: -1;
+  }
+  .testimonials-info {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    line-height: 1.4;
   }
 </style>
