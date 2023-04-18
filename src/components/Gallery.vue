@@ -1,11 +1,11 @@
 <template>
   <div class="flex-wrapper">
     <section class="gallery-container">
-      <div class="gallery-image gruppe-geigenkasten"></div>
-      <div class="gallery-image chris-stehend"></div>
-      <div class="gallery-image gruppe-geiger"></div>
-      <div class="gallery-image chris-trommel"></div>
-      <div class="gallery-image gruppe-socken"></div>
+      <div class="gallery-image rot"></div>
+      <div class="gallery-image hochzeitsmesse"></div>
+      <div class="gallery-image grün"></div>
+      <div class="gallery-image gruppe-grid"></div>
+      <div class="gallery-image blau"></div>
     </section>
   </div>
 </template>
@@ -43,39 +43,41 @@ export default {};
       transform: scale(1.005);
     }
   }
-  .gruppe-geiger {
-    grid-column-start: 1;
-    grid-column-end: -1;
-    background-image: url("../assets/images/grid/gruppe-geiger.webp");
-    background-position: 0% 50%;
-    background-size: cover;
-  }
-  .gruppe-geigenkasten {
+
+  .rot {
     grid-column-start: 1;
     grid-column-end: 2;
-    background-image: url("../assets/images/grid/chris-trommel.webp");
+    background-image: url("../assets/images/grid/rot.webp");
     // background-position: 100% 100%;
     background-size: cover;
   }
-  .gruppe-socken {
-    grid-column-start: 3;
-    grid-column-end: -1;
-    background-image: url("../assets/images/grid/gruppe-socken.webp");
-    background-position: 0% 50%;
-    background-size: cover;
-  }
-  .chris-stehend {
+  .hochzeitsmesse {
     grid-column-start: 2;
     grid-column-end: -1;
     background-image: url("../assets/images/grid/hochzeitsmesse.webp");
     background-position: 0% 50%;
     background-size: cover;
   }
-  .chris-trommel {
+  .gruppe-grid {
     grid-column-start: 1;
     grid-column-end: 3;
-    background-image: url("../assets/images/grid/gruppe-geigenkasten.webp");
+    background-image: url("../assets/images/grid/gruppe-grid.webp");
     background-position: 50% 100%;
+    background-size: cover;
+  }
+  .grün {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    background-image: url("../assets/images/grid/grün.webp");
+    background-position: 0% 70%;
+    background-size: cover;
+  }
+
+  .blau {
+    grid-column-start: 3;
+    grid-column-end: -1;
+    background-image: url("../assets/images/grid/blau.webp");
+    background-position: 30% 50%;
     background-size: cover;
   }
 }
